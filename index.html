@@ -36,7 +36,7 @@
         </div>
 
 
-        <div class="booking-form">
+        <div id="areaHide" class="booking-form">
             <h3>Explore By Bus</h3>
 
             <div class="inputs">
@@ -64,24 +64,24 @@
                 <div class="input-group f-class">
                 <div>
                     <label for="">First Class ($150)</label>
-                    <input id="firstClass-count" class="inp-style inp-width" type="number" name="" value="0">
+                    <input id="firstClass-count" class="inp-style inp-width" value="0">
                     
                 </div>
-                <div id="" class="plus-minus-btn">
-                    
-                    <button  onclick="changeTicketItem('firstClass',true)" class="btn btn-default"><i class="fas fa-plus"></i></button>
-                    
-                    <button onclick="changeTicketItem('firstClass',false)" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                <div class="plus-minus-btn">
+
+                    <p> <span onclick="changeTicketItem('firstClass',true)">+</span> <span onclick="changeTicketItem('firstClass',false)">-</span> </p>
+                
                 </div>
             </div>
                 <div class="input-group f-class">
                     <div>
                         <label for="">Economy ($100)</label>
-                        <input id="economy-count" class="inp-style inp-width" type="number" name="" value="0">
+                        <input id="economy-count" class="inp-style inp-width" value="0">
                     </div>
                     <div class="plus-minus-btn">
-                        <button onclick="changeTicketItem('economy',true)" class=" btn-default"><i class="fas fa-plus"></i></button>
-                    <button onclick="changeTicketItem('economy',false)" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                       
+                        <p> <span onclick="changeTicketItem('economy',true)">+</span> <span onclick="changeTicketItem('economy',false)">-</span> </p>
+
                     </div>
                 </div>
 
@@ -114,9 +114,33 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="bookedTicked" class="btn-style">Book Now</button>
         </div>
+
     </main>
+
+ <!--Payment Section-->
+
+ <section>
+     <div id="areaShow" class="payment-section">
+     <h3>Payment Method</h3><br>
+        <div>
+            <p>Total Amount: <span id="totalPay">000</span></p>
+        </div>
+    <div class="images-part">
+        <img src="images/bkash.png" alt="">
+        <img src="images/dbbl.png" alt="">
+        <img src="images/visa.png" alt="">
+        <img src="images/master.png" alt="">
+    </div>
+     
+    </div>
+    
+        </section>
+          
+             
+    
+    
 
     <!--Thank You-->
     <script src="myscript.js"></script>
